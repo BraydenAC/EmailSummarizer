@@ -1,7 +1,9 @@
+from .logger import logger
 
 class _Model_Wrapper:
     def __init__(self, model_name, model_config: dict = {}):
-        print("Model initialized")
+        logger.debug("Model initialized")
     
-    def generate_summary(input: str):
+    def generate_summary(self, input: str):
+        logger.debug(f"generate_summary called with input of '{input}'")
         print(f"input is: {input}")
