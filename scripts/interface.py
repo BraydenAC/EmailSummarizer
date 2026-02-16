@@ -16,6 +16,7 @@ class main:
 
         if user_entry != "q":
             #Send project summary request to AI system
+            returned_result = host.RunSummaryTask(user_entry)
             #print returned output
-            print("Non-exit sequence entered!")
+            print(f"Output for {user_entry} is {returned_result}")
     print("quitting...")

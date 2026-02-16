@@ -6,4 +6,4 @@ class _Model_Wrapper:
     
     def generate_summary(self, input: str):
         logger.debug(f"generate_summary called with input of '{input}'")
-        print(f"input is: {input}")
+        return input
