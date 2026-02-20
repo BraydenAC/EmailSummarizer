@@ -8,8 +8,8 @@ logger = logging.getLogger("logger_main")
 logger.setLevel(logging_level)
 
 #Get file path
-script_folder = Path(__file__).resolve().parent
-logs_folder = script_folder.parent / ".logs"
+src_folder = Path(__file__).resolve().parent.parent
+logs_folder = src_folder.parent / ".logs"
 logs_folder.mkdir(exist_ok=True)
 #Make filename and join
 log_file_name = datetime.now().strftime("%m-%d_%H:%M:%S")
